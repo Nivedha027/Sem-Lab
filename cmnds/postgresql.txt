@@ -1,0 +1,23 @@
+1.create database IBM;
+2.use IBM;
+3.create table user(
+ rollno varchar(10) primary key, 
+username varchar (20) ,
+ email varchar (30),
+password varchar(20)
+);
+4.insert into user values("19C064","nivedha64",
+"nivedhag@student.tce.edu","nivedhaaaa");
+
+
+create user blessy password '1234';
+create new server: right click-> create -> server
+server name: TempServer
+connections tab-> host name: localhost , username: created user and pass
+use db in new server
+select * from user /*****permission denied******/
+old server: grant select on user to blessy;
+new server : execute select again run
+grant all on user to blessy;
+revoke all on user from blessy;
+drop user blessy;
