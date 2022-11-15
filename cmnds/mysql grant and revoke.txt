@@ -1,0 +1,51 @@
+steps fro cmd:
+cd C:\Program Files\MySQL\MySQL Server 8.0\bin
+mysql -u root -p
+mysql>
+
+database:
+create database nivi;
+use nivi;
+create table user(id int primary key,name varchar(20));
+insert into user values(1,'nivi');
+ 
+select user();
+create user 'nivi'@'localhost' identified by 'nivi';
+show grants for 'nivi'@'localhost';
+grant select on *.* to 'nivi'@'localhost';
+grant insert on employees.student to 'nivi'@'localhost';
+grant update(id) on employees.student to 'nivi'@'localhost';
+show grants for 'nivi'@'localhost';
+system mysql -u nivi -p
+select user();
+use employees;
+insert into student values(100,'nivi');
+update student set id=1000 where name='nivi';
+update student set name='niviii' where id=1000; permission denied
+system mysql -u root -p
+select user();
+revoke select on *.* from 'nivi'@'localhost';
+revoke update(id) on employees.student from 'nivi'@'localhost';
+revoke insert on employees.student from 'nivi'@'localhost';
+show grants for 'nivi'@'localhost'; /*****only select shown***/
+system mysql -u nivi -p
+select user();
+use employees;
+insert into student values(100,'nivi'); /***permisssion denied**////
+system mysql -u root -p
+select user();
+show grants for 'root'@'localhost';/****default priveleges will be displayed**/////
+grant all privelges on *.* to 'nivi'@'localhost' with grant option;
+show grants for 'nivi'@'localhost';
+alter user 'nivi'@'localhost' identified by '1234';/****password changed***///
+alter user 'nivi'@'localhost' identified by '1234' account lock;
+select user , host from mysql.user;
+alter user 'nivi'@'localhost' password expire;
+
+constraints:
+create table school(sid int primary key,jdate varchar(20),foreign key(sid) references user(id) on delete cascade);
+delete from user where name='dhinu';
+create table exam(sid int,jdate varchar(20),foreign key(sid) references user(id) on delete set null);
+
+
+ 

@@ -1,0 +1,18 @@
+install nmap and wireshark
+
+a) nping --udp --dest-ip 192.168.0.1 -p 2000 --privileged -c 5000000 --data-length 1 --delay 0 -H -N
+This is the command line used to generate UDP packets.
+
+b) nping --tcp --dest-ip 192.168.0.1 -p 2000 --privileged -c 5000000 --data-length 1 --delay 0 -H -N
+This is the command line used to generate TCP packets.
+
+c) nping --icmp --dest-ip 192.168.0.1 --privileged -c 5000000 --data-length 1 --delay 0 -H -N
+This is the command line used to generate UDP packets.
+
+5) Its always suggested to execute one command at a time. So that we can capture them 
+ and analyse them properly.
+6) Open wire shark and Start capturing the data packets.
+7) Click STOP after a few seconds.
+8) In search bar just type the packet's name. 
+ for instance: type "tcp" if you pinged TCP on command prompt.
+9) The analysis of the data packets will be displayed below.

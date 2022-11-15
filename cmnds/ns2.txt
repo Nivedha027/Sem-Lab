@@ -1,0 +1,9 @@
+sudo apt-get install ns2
+
+error:
+sudo apt-get update
+sudo apt-get install ns2
+
+Run:
+save file as filename.tcl
+in terminal -> ns filename.tcl
