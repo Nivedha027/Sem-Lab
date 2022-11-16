@@ -1,0 +1,58 @@
+What is JMeter?
+Apache JMeter is an open-source, 100% pure Java application that load-tests 
+functional behavior and measures performance. JMeter simulates a heavy load 
+to test an app’s strength and analyze its overall performance under different load 
+types. 
+JMeter flexibly tests the dynamic and static resources of an application. Now, 
+you might be wondering what these resources are. Dynamic resources include 
+JSP, Servlets, and AJAX, while static resources are Document Object Model 
+(DOM) elements like JavaScript and HTML.
+
+
+Selenium Record and Playback tool for ease of getting acquainted with 
+Selenium WebDriver.
+The new Selenium IDE is designed to record your interactions with websites to 
+help you generate and maintain site automation, tests, and remove the need to 
+manually step through repetitive takes. Features include:
+* Recording and playing back tests on Firefox and Chrome.
+* Organizing tests into suites for easy management.
+* Saving and loading scripts, for later playback.
+* Support for Selenium 3.
+
+Weka is a collection of machine learning algorithms for data mining tasks. It 
+contains tools for data preparation, classification, regression, clustering, 
+association rules mining, and visualization.
+
+Wireshark is a network protocol analyzer, or an application that captures 
+packets from a network connection, such as from your computer to your home 
+office or the internet. Packet is the name given to a discrete unit of data in a 
+typical Ethernet network.
+Wireshark will help you capture network packets and display them at a granular 
+level. Once these packets are broken down, you can use them for real-time or 
+offline analysis. This tool lets you put your network traffic under a microscope, 
+and then filter and drill down into it, zooming in on the root cause of problems, 
+assisting with network analysis and ultimately network security.
+This free Wireshark tutorial will teach you how to capture, interpret, filter and 
+inspect data packets to effectively troubleshoot
+
+Blender is a free and open-source 3D computer graphics software tool set used 
+for creating animated films, visual effects, art, 3D-printed models, motion 
+graphics, interactive 3D applications, virtual reality, and, formerly, video 
+games. Blender's features include 3D modelling, UV mapping, texturing, digital 
+drawing, raster graphics editing, rigging and skinning, fluid and smoke 
+simulation, particle simulation, soft body simulation, sculpting, animation, 
+match moving, rendering, motion graphics, video editing, and compositing
+
+openmp : 
+OpenMP is a library for parallel programming in the SMP (symmetric multi-processors, or shared-memory processors) model. When programming with OpenMP, all threads share memory and data. OpenMP supports C, C++ and Fortran. The OpenMP functions are included in a header file called omp.h .
+OpenMP program structure: An OpenMP program has sections that are sequential and sections that are parallel. In general an OpenMP program starts with a sequential section in which it sets up the environment, initializes the variables, and so on.
+When run, an OpenMP program will use one thread (in the sequential sections), and several threads (in the parallel sections).
+Why OpenMP? More efficient, and lower-level parallel code is possible, however OpenMP hides the low-level details and allows the programmer to describe the parallel code with high-level constructs, which is as simple as it can get.
+
+mpi library :
+Parallel programs enable users to fully utilize the multi-node structure of supercomputing clusters. Message Passing Interface (MPI) is a standard used to allow several different processors on a cluster to communicate with each other. In this tutorial we will be using the Intel C++ Compiler, GCC, IntelMPI, and OpenMPI to create a multiprocessor ‘hello world’ program in C++. This tutorial assumes the user has experience in both the Linux terminal and C++.
+
+NS2 stands for Network Simulator Version 2.
+It is an opensource event-driven simulator designed specifically for research in 
+computer communication networks.
+
